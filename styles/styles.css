@@ -1,0 +1,113 @@
+
+:root{
+	/* primary */
+	--Red: hsl(0, 78%, 62%);
+	--Cyan: hsl(180, 62%, 55%);
+	--Orange: hsl(34, 97%, 64%);
+	--Blue: hsl(212, 86%, 64%);
+	/* Neutral */
+	--Very-Dark-Blue: hsl(234, 12%, 34%);
+	--Grayish-Blue: hsl(229, 6%, 66%);
+	--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+
+	margin: 0;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+.wrapper {
+	box-sizing: border-box;
+	padding: 0 20px;
+
+	width: 375px;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+
+.header {
+	margin-bottom: 60px;
+
+	text-align: center;	
+	color: var(--Grayish-Blue);
+
+}
+
+.header__title {
+	font-weight: 400;
+}
+.title--bold {
+	display: block;
+
+	font-weight: 700;
+	color: var(--Very-Dark-Blue);
+}
+
+.cardComponent {
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin-bottom: 40px;
+
+	width: 100%;
+	height: 250px;
+
+	position: relative;
+
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(200, 200, 200, 0.5);
+
+}
+.cardComponent::before {
+	content: '';
+	display: block;
+
+	width: 100%;
+	height: 5px;
+
+	position: absolute;
+	left: 0;
+
+	border-radius: 10px 10px 0 0;
+}
+.cardComponent--cyan::before {
+	background-color: var(--Cyan);
+}
+.cardComponent--red::before {
+	background-color: var(--Red);
+}
+.cardComponent--orange::before {
+	background-color: var(--Orange);
+}
+.cardComponent--blue::before {
+	background-color: var(--Blue);
+}
+
+
+.cardComponent__title {
+	margin-bottom: 0;
+	color: var(--Very-Dark-Blue);
+}
+.cardComponent__text {
+	margin-top: 5px;
+	color: var(--Grayish-Blue);
+}
+.cardComponent__image {
+	position: absolute;
+	right: 20px;
+	bottom: 45px;
+}
+
