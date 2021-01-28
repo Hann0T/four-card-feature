@@ -40,7 +40,7 @@ body {
 
 
 .header {
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 
 	text-align: center;	
 	color: var(--Grayish-Blue);
@@ -110,4 +110,49 @@ body {
 	right: 20px;
 	bottom: 45px;
 }
+
+
+
+
+	/*media queries*/
+
+@media (min-width: 1200px){
+
+	body {
+		height: 100vh;
+	}
+
+	.header {
+		padding: 0 14em;
+	}
+
+	.wrapper {
+		width: 1000px;
+		position: relative;
+	}
+
+	.cardComponent {
+		width: 335px;
+	}
+	
+	.cardComponent--float {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.cardComponent--cyan {
+		left: -50px;
+	}
+
+	.cardComponent--blue {
+		right: -50px;
+	}
+
+
+
+}
+
+
+
 
